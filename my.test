@@ -1,0 +1,32 @@
+
+@@ set 
+    domain testapp.galenframework.com
+    gridUrl http://localhost:4444/wd/hub
+	
+
+@@ table myDevices
+    | deviceName | size    | tags   | 
+    | desktop    | 1024x768| desktop|
+
+@@ table myBrowsers
+    | browser           | browserName          | 
+    | firefox           | Firefox              | 
+    | chrome            | Chrome               | 
+    | internet explorer | Internet Explorer 11 |
+
+@@ parameterized using myDevices
+@@ parameterized using myBrowsers
+Home page in ${deviceName} ${browserName} browser
+    selenium grid ${gridUrl} --browser "${browser}" --page "http://${domain}" --size ${size}
+        
+        check specs/home.gspec  --include "${tags}"
+        run  tests/logToMyNotes.js
+        check specs/mynotes.gspec --include "${tags}"
+        run  tests/eventoTest.js
+        check specs/eventTeste.gspec --include "${tags}"
+        
+        
+        
+        
+   
+        

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Galen Test Report</title>
+        <link rel="stylesheet" href="galen-report.css"/>
+        <script src="vue.js"></script>
+        <script src="galen-report.js"></script>
+        <script type="text/javascript">
+var REPORT_DATA = {
+  "testId" : "1-home-page-on-desktop-internet-explorer",
+  "name" : "Home page on desktop Internet Explorer",
+  "report" : {
+    "nodes" : [ {
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "RuntimeException: org.openqa.selenium.WebDriverException: Error forwarding the new session cannot find : Capabilities {browserName: ie}\nCommand duration or timeout: 56 milliseconds",
+        "status" : "error",
+        "time" : 1548813039387,
+        "stacktrace" : "java.lang.RuntimeException: org.openqa.selenium.WebDriverException: Error forwarding the new session cannot find : Capabilities {browserName: ie}\nCommand duration or timeout: 56 milliseconds\r\n\tat com.galenframework.browser.SeleniumGridBrowserFactory.openBrowser(SeleniumGridBrowserFactory.java:53)\r\n\tat com.galenframework.runner.GalenBasicTestRunner.runTest(GalenBasicTestRunner.java:73)\r\n\tat com.galenframework.tests.GalenBasicTest.execute(GalenBasicTest.java:55)\r\n\tat com.galenframework.TestRunnable.runTest(TestRunnable.java:75)\r\n\tat com.galenframework.TestRunnable.run(TestRunnable.java:101)\r\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)\r\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)\r\n\tat java.lang.Thread.run(Unknown Source)\r\nCaused by: org.openqa.selenium.WebDriverException: Error forwarding the new session cannot find : Capabilities {browserName: ie}\nCommand duration or timeout: 56 milliseconds\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$new$0(JsonWireProtocolResponse.java:53)\r\n\tat org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$getResponseFunction$2(JsonWireProtocolResponse.java:91)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:122)\r\n\tat java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)\r\n\tat java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)\r\n\tat java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)\r\n\tat java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)\r\n\tat java.util.stream.AbstractPipeline.copyInto(Unknown Source)\r\n\tat java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)\r\n\tat java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)\r\n\tat java.util.stream.AbstractPipeline.evaluate(Unknown Source)\r\n\tat java.util.stream.ReferencePipeline.findFirst(Unknown Source)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:143)\r\n\tat com.galenframework.browser.SeleniumGridBrowserFactory.openBrowser(SeleniumGridBrowserFactory.java:48)\r\n\t... 7 more\r\nCaused by: org.openqa.selenium.WebDriverException: Error forwarding the new session cannot find : Capabilities {browserName: ie}\nBuild info: version: 'unknown', revision: 'unknown', time: 'unknown'\nSystem info: host: 'LTBR67672', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'\nDriver info: driver.version: unknown\r\n\tat org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:118)\r\n\tat org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:85)\r\n\tat org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:69)\r\n\tat javax.servlet.http.HttpServlet.service(HttpServlet.java:707)\r\n\tat javax.servlet.http.HttpServlet.service(HttpServlet.java:790)\r\n\tat org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:865)\r\n\tat org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:535)\r\n\tat org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:146)\r\n\tat org.seleniumhq.jetty9.security.SecurityHandler.handle(SecurityHandler.java:548)\r\n\tat org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)\r\n\tat org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)\r\n\tat org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:1595)\r\n\tat org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)\r\n\tat org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1340)\r\n\tat org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)\r\n\tat org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:473)\r\n\tat org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:1564)\r\n\tat org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)\r\n\tat org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1242)\r\n\tat org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:144)\r\n\tat org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)\r\n\tat org.seleniumhq.jetty9.server.Server.handle(Server.java:503)\r\n\tat org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:364)\r\n\tat org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:260)\r\n\tat org.seleniumhq.jetty9.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)\r\n\tat org.seleniumhq.jetty9.io.FillInterest.fillable(FillInterest.java:103)\r\n\tat org.seleniumhq.jetty9.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)\r\n\tat org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)\r\n\tat org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)\r\n\tat org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)\r\n\tat org.seleniumhq.jetty9.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)\r\n\tat org.seleniumhq.jetty9.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)\r\n\tat org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)\r\n\tat org.seleniumhq.jetty9.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)\r\n\t... 1 more\r\n",
+        "type" : "node"
+      } ],
+      "time" : 1548813038599,
+      "type" : "node"
+    } ]
+  }
+};
+        </script>
+    </head>
+    <body>
+        <div id="app">
+            <div class="top-menu">
+                <a class="link" href="report.html">Back to Test Overview</a>
+                <span class="link" v-on:click="expandAll()">Expand All</span>
+                <span class="link" v-on:click="collapseAll()">Collapse All</span>
+                <span class="link" v-on:click="expandOnlyErrors()">Expand Errors</span>
+            </div>
+            <div v-for="node in reportData.report.nodes">
+                <report-node v-if="node.type === 'node'" v-bind:node="node"></report-node>
+                <div class="node-text" v-if="node.type === 'text'">
+                    {{node.name}}
+                </div>
+                <layout-report v-if="node.type === 'layout'" v-bind:layout="node"></layout-report>
+                <mutation-report v-if="node.type === 'mutation'" v-bind:report="node"></mutation-report>
+            </div>
+        </div>
+
+        <template id="tpl-report-node">
+            <div class="report-node">
+                <div class="node-line" v-bind:class="['status-' + node.status]">
+                    <span class="node-time">{{node.time | formatTime}}</span>
+                    <span class="node-label"
+                        v-on:click="toggleReportNode(node)"
+                        v-bind:class="['status-' + node.status, node.expanded ? 'expanded': 'collapsed', 'contains-children-' + node.hasChildren]"
+                        >{{node.status}}</span>
+                    <span class="node-title">{{node.name}}</span>
+                    <span class="node-extras-link"
+                        v-if="node.extras"
+                        v-on:click="showNodeExtrasPopup(node.extras)"
+                        >extras</span>
+                </div>
+                <ul class="node-attachments" v-if="node.attachments && node.attachments.length > 0">
+                    <li v-for="attachment in node.attachments">
+                        <a class="icon-sprite-before node-attachment" v-bind:href="attachment">{{attachment}}</a>
+                    </li>
+                </ul>
+                <div class="child-nodes" v-if="node.type === 'node'" v-bind:class="{'child-nodes-expanded': node.expanded}">
+                    <div class="stacktrace" v-if="node.stacktrace">{{node.stacktrace}}</div>
+                    <div v-for="childNode in node.nodes">
+                        <report-node v-if="childNode.type === 'node'" v-bind:node="childNode"></report-node>
+                        <div class="node-text" v-if="childNode.type === 'text'">
+                            {{childNode.name}}
+                        </div>
+                        <layout-report v-if="childNode.type === 'layout'" v-bind:layout="childNode"></layout-report>
+                        <mutation-report v-if="childNode.type === 'mutation'" v-bind:report="childNode"></mutation-report>
+                    </div>
+                </div>
+                <div class="extras-popup popup-wrapper" v-if="extrasPopup.show">
+                    <div class="popup-shadow" v-on:click="extrasPopup.show = false"> </div>
+                    <div class="popup-container" style="top: 30px;">
+                        <div class="popup-body">
+                            <table class="extras-table">
+                                <tbody>
+                                    <tr v-for="extrasItem in extrasPopup.extras">
+                                        <td>{{extrasItem.name}}</td>
+                                        <td>
+                                            <div v-if="extrasItem.value.type === 'link'">
+                                                <a class="link" v-bind:href="extrasItem.value.value">{{extrasItem.value.value}}</a>
+                                            </div>
+                                            <div v-else v-if="extrasItem.value.type === 'file'">
+                                                <a class="link" v-bind:href="extrasItem.value.value">{{extrasItem.value.value}}</a>
+                                            </div>
+                                            <div v-else v-if="extrasItem.value.type === 'text'">
+                                                {{extrasItem.value.value}}
+                                            </div>
+                                            <div v-else v-if="extrasItem.value.type === 'image'">
+                                                <a v-bind:href="extrasItem.value.value"><img v-bind:src="extrasItem.value.value"/></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </template>
+
+        <template id="tpl-mutation-report">
+            <div class="mutation-report">
+                <div class="node-line" v-bind:class="['status-' + report.status]">
+                    <span class="node-time">{{report.time | formatTime }}</span>
+                    <span class="node-label"
+                        v-on:click="toggleReportNode(report)"
+                        v-bind:class="['status-' + report.status, report.expanded ? 'expanded': 'collapsed', 'contains-children-true']"
+                        >MUTATION</span>
+                    <span class="node-title">{{report.name}}</span>
+                </div>
+                <div class="child-nodes" v-bind:class="{'child-nodes-expanded': report.expanded}">
+                    <table class="mutation-table">
+                        <thead>
+                            <tr>
+                                <th v-for="column in tableColumns" v-bind:class="{'sorted-column': sorting.columnField === column.field}">
+                                    <span class="link" v-on:click="sortTable(column)">{{column.name}}</span>
+                                    <span class="sorting-icon"
+                                        v-if="sorting.columnField === column.field"
+                                        v-bind:class="[sorting.order === 1 ? 'sorting-down' : 'sorting-up']"></span>
+                                </th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="mutation-table-total">
+                                <td> <b>Total</b> </td>
+                                <td class="cell-passed">{{report.mutationReport.totalPassed}}</td>
+                                <td class="cell-failed">{{report.mutationReport.totalFailed}}</td>
+                                <td class="cell-failed">{{report.mutationReport.failedRatio | roundFailedRatio}}%</td>
+                                <td></td>
+                            </tr>
+                            <tr v-for="mutation in mutations">
+                                <td><span class="link" v-on:click="toggleMutationFor(mutation.name)">{{mutation.name}}</span></td>
+                                <td class="cell-passed">{{mutation.passed}}</td>
+                                <td class="cell-failed">{{mutation.failed}}</td>
+                                <td class="cell-failed">{{mutation.failedRatio}}%</td>
+                                <td>
+                                    <div v-if="showFailedMutationsFor === mutation.name">
+                                        All failed mutations:
+                                        <ul>
+                                            <li v-for="mutationText in mutation.failedMutations">{{mutationText}}</li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </template>
+
+        <template id="tpl-layout-report">
+            <div class="layout-report">
+                <div class="node-line" v-bind:class="['status-' + layout.status]">
+                    <span class="node-time">{{layout.time | formatTime}}</span>
+                    <span class="node-label"
+                        v-on:click="toggleReportNode(layout)"
+                        v-bind:class="['status-' + layout.status, layout.expanded ? 'expanded': 'collapsed', 'contains-children-' + layout.hasChildren]"
+                        >LAYOUT</span>
+                    <span class="node-title">{{layout.name}}</span>
+                </div>
+                <div class="node-horizontal-menu">
+                    <span class="link" v-on:click="showFailureMap()">Failure Map</span> |
+                    <span class="link" v-on:click="showHeatMap()">Heat Map</span>
+                </div>
+
+                <div class="child-nodes" v-bind:class="{'child-nodes-expanded': layout.expanded}">
+                    <layout-section v-for="section in layout.sections" v-bind:section="section" v-bind:bus="bus"></layout-section>
+                </div>
+
+                <screenshot-popup v-if="screenshotPopup.shown"
+                    v-bind:screenshot="screenshotPopup.screenshotFile"
+                    v-bind:highlight="screenshotPopup.highlightAreas"
+                    v-bind:guides="screenshotPopup.metaGuides"
+                    v-bind:spec="screenshotPopup.spec"
+                    @close="screenshotPopup.shown = false"
+                    ></screenshot-popup>
+            </div>
+        </template>
+
+        <template id="tpl-layout-section">
+            <div class="layout-section" v-bind:class="{'has-failure': section.hasFailure}">
+                <div class="title icon-sprite-before"
+                    v-on:click="toggleReportNode(section)"
+                    v-bind:title="section.place ? section.place.filePath + ':' + section.place.lineNumber : ''"
+                    >{{section.name}}</div>
+                <div class="child-nodes" v-bind:class="{'child-nodes-expanded': section.expanded}">
+                    <layout-section v-for="subSection in section.sections" v-bind:section="subSection" v-bind:bus="bus"></layout-section>
+                    <object-node v-for="object in section.objects" v-bind:object="object" v-bind:bus="bus"></object-node>
+                </div>
+            </div>
+        </template>
+
+        <template id="tpl-object-node">
+            <div class="layout-object" v-bind:class="{'has-failure': object.hasFailure}">
+                <div class="title icon-sprite-before"
+                    v-on:click="toggleReportNode(object)"
+                    >{{object.name}}:</div>
+                <div class="child-nodes" v-bind:class="{'child-nodes-expanded': object.expanded}">
+                    <layout-spec v-for="spec in object.specs" v-bind:spec="spec" v-bind:bus="bus"></layout-spec>
+                </div>
+            </div>
+        </template>
+
+        <template id="tpl-layout-spec">
+            <div class="layout-spec" v-bind:class="[isFailed ? 'has-failure': '', 'status-' + spec.status]">
+                <div class="title icon-sprite-before"
+                    v-on:click="showSpec"
+                    v-bind:title="spec.place ? spec.place.filePath + ':' + spec.place.lineNumber : ''"
+                    >{{spec.name}}</div>
+                <ul class="error-messages" v-if="isFailed">
+                    <li class="error-message" v-for="error in spec.errors">{{error}}</li>
+                </ul>
+            </div>
+        </template>
+        <template id="tpl-screenshot-popup">
+            <div>
+                <div class="popup-shadow" v-on:click="$emit('close')"> </div>
+                <div class="popup-container" v-bind:style="{top: position.top + 'px', left: position.left + 'px', width: position.width + 'px', height: position.height + 'px'}">
+                    <div class="popup-body">
+                        <div class="image-cropper" v-bind:style="{width: crop.width + 'px', height: crop.height + 'px'}">
+                            <img v-bind:src="screenshot" v-bind:style="{'margin-left': crop.offsetLeft +'px', 'margin-top': crop.offsetTop + 'px'}"/>
+                        </div>
+                        <svg v-bind:width="crop.width + 'px'" v-bind:height="crop.height + 'px'">
+                            <g v-for="object in highlight.objects">
+                                <rect
+                                    v-bind:x="object.area.x + crop.offsetLeft"
+                                    v-bind:y="object.area.y + crop.offsetTop"
+                                    v-bind:width="object.area.width"
+                                    v-bind:height="object.area.height"
+                                    style="opacity: 0.8"
+                                    v-bind:style="{fill: object.fill?object.color:'none', 'stroke-width': object.border?3:0, stroke: object.border?object.color:'none'}"/>
+                                <g v-if="object.caption">
+                                    <rect
+                                        v-bind:x="object.area.x + crop.offsetLeft"
+                                        v-bind:y="object.area.y + crop.offsetTop - 20"
+                                        v-bind:width="object.name.length * 15 + 10"
+                                        v-bind:height="20"
+                                        style="opacity: 0.8; stroke-width: 0; stroke: none;"
+                                        v-bind:style="{fill: object.color}"/>
+                                    <text
+                                        v-bind:x="object.area.x + crop.offsetLeft + 5"
+                                        v-bind:y="object.area.y + crop.offsetTop - 5"
+                                        fill="#ffffff"
+                                        font-weight="bold"
+                                        font-family="helvetica"
+                                        font-size="15px"
+                                        >{{object.name}}</text>
+                                </g>
+                            </g>
+
+                            <g v-for="guideElements in guides">
+                                <g v-for="guide in guideElements">
+                                    <line class="meta-line-guide" v-if="guide.type === 'line'"
+                                        v-bind:x1="guide.x1 + crop.offsetLeft"
+                                        v-bind:y1="guide.y1 + crop.offsetTop"
+                                        v-bind:x2="guide.x2 + crop.offsetLeft"
+                                        v-bind:y2="guide.y2 + crop.offsetTop"/>
+
+                                    <g v-if="guide.type === 'text'">
+                                        <text class="meta-text"
+                                            v-bind:x="guide.x + crop.offsetLeft"
+                                            v-bind:y="guide.y + crop.offsetTop"
+                                            v-bind:transform="guide.vertical ? 'rotate(-90,' + (guide.x + crop.offsetLeft) + ', ' + (guide.y + crop.offsetTop) +')': 'rotate(0)'"
+                                            >{{guide.text}}</text>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                        <div class="popup-side-panel">
+                            <div v-if="spec">
+                                <span class="spec-name">{{spec.name}}</span>
+                                <ul v-if="spec.errors" class="spec-errors">
+                                    <li v-for="error in spec.errors">{{error}}</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </template>
+        <script>renderTestReport(REPORT_DATA);</script>
+    </body>
+</html>

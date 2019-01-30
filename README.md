@@ -1,2 +1,2 @@
-# CrossBrowserGalen-Framework
-Test Multi Browsers
+# Automation-Layout-Galen-Framework-JavaScript
+Test Layout WebSite Desktop

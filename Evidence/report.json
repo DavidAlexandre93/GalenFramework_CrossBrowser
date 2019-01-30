@@ -1,0 +1,45 @@
+{
+  "tests" : [ {
+    "name" : "Home page in desktop Firefox browser",
+    "startedAt" : 1548818549833,
+    "endedAt" : 1548818561360,
+    "failed" : false,
+    "statistic" : {
+      "passed" : 20,
+      "errors" : 0,
+      "warnings" : 0,
+      "total" : 20
+    },
+    "testId" : "1-home-page-in-desktop-firefox-browser",
+    "duration" : 11527,
+    "failed" : false
+  }, {
+    "name" : "Home page in desktop Chrome browser",
+    "startedAt" : 1548818561360,
+    "endedAt" : 1548818570549,
+    "failed" : true,
+    "statistic" : {
+      "passed" : 18,
+      "errors" : 2,
+      "warnings" : 0,
+      "total" : 20
+    },
+    "testId" : "2-home-page-in-desktop-chrome-browser",
+    "duration" : 9189,
+    "failed" : true
+  }, {
+    "name" : "Home page in desktop Internet Explorer 11 browser",
+    "startedAt" : 1548818570549,
+    "endedAt" : 1548818722681,
+    "failed" : true,
+    "statistic" : {
+      "passed" : 16,
+      "errors" : 4,
+      "warnings" : 0,
+      "total" : 20
+    },
+    "testId" : "3-home-page-in-desktop-internet-explorer-11-browser",
+    "duration" : 152132,
+    "failed" : true
+  } ]
+}

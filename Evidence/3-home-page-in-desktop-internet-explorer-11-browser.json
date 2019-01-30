@@ -1,0 +1,430 @@
+{
+  "testId" : "3-home-page-in-desktop-internet-explorer-11-browser",
+  "name" : "Home page in desktop Internet Explorer 11 browser",
+  "report" : {
+    "nodes" : [ {
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "check specs/home.gspec  --include \"desktop\"",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: specs/home.gspec included tags: desktop",
+          "status" : "error",
+          "time" : 1548818582064,
+          "includedTags" : [ "desktop" ],
+          "excludedTags" : [ ],
+          "sections" : [ {
+            "name" : "Header",
+            "place" : {
+              "filePath" : "specs/home.gspec",
+              "lineNumber" : 18
+            },
+            "objects" : [ {
+              "name" : "header.logo",
+              "specs" : [ {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "specs/home.gspec",
+                  "lineNumber" : 32
+                },
+                "name" : "image file homepage-dump/objects/header.logo.png, map-filter denoise 2, error 5px",
+                "errors" : [ "Element does not look like \"specs\\homepage-dump/objects/header.logo.png\". There are 610 mismatching pixels but max allowed is 5" ],
+                "highlight" : [ "header.logo" ],
+                "imageComparison" : {
+                  "actualImage" : "layout-11-header.logo-actual.png",
+                  "expectedImage" : "layout-12-header.logo-expected.png",
+                  "comparisonMapImage" : "layout-13-header.logo-map.png"
+                }
+              } ]
+            }, {
+              "name" : "header.caption",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "specs/home.gspec",
+                  "lineNumber" : 41
+                },
+                "name" : "text is \"Sample Website for Galen Framework\"",
+                "highlight" : [ "header.caption" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Menu",
+            "place" : {
+              "filePath" : "specs/home.gspec",
+              "lineNumber" : 45
+            },
+            "objects" : [ {
+              "name" : "menu",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "specs/home.gspec",
+                  "lineNumber" : 48
+                },
+                "name" : "above footer 450px",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "menu",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "footer",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : "450px",
+                  "realDistance" : "450px"
+                } ],
+                "highlight" : [ "menu", "footer" ]
+              } ]
+            }, {
+              "name" : "menu-item-1",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "specs/home.gspec",
+                  "lineNumber" : 54
+                },
+                "name" : "text is \"Home\"",
+                "highlight" : [ "menu-item-1" ]
+              } ]
+            }, {
+              "name" : "menu-item-2",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "specs/home.gspec",
+                  "lineNumber" : 66
+                },
+                "name" : "text is \"My Notes\"",
+                "highlight" : [ "menu-item-2" ]
+              } ]
+            }, {
+              "name" : "menu-item-3",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "specs/home.gspec",
+                  "lineNumber" : 78
+                },
+                "name" : "text is \"About\"",
+                "highlight" : [ "menu-item-3" ]
+              } ]
+            }, {
+              "name" : "menu-item-4",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "specs/home.gspec",
+                  "lineNumber" : 90
+                },
+                "name" : "text is \"Contact\"",
+                "highlight" : [ "menu-item-4" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Content",
+            "place" : {
+              "filePath" : "specs/home.gspec",
+              "lineNumber" : 100
+            },
+            "objects" : [ {
+              "name" : "loginButton",
+              "specs" : [ {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "specs/home.gspec",
+                  "lineNumber" : 106
+                },
+                "name" : "inside content 50px left, 772px right, 257px top, 148px bottom",
+                "errors" : [ "\"loginButton\" is 147px bottom instead of 148px" ],
+                "meta" : [ {
+                  "from" : {
+                    "object" : "loginButton",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "content",
+                    "edge" : "left"
+                  },
+                  "expectedDistance" : "50px",
+                  "realDistance" : "50px"
+                }, {
+                  "from" : {
+                    "object" : "loginButton",
+                    "edge" : "right"
+                  },
+                  "to" : {
+                    "object" : "content",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "772px",
+                  "realDistance" : "772px"
+                }, {
+                  "from" : {
+                    "object" : "loginButton",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "content",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : "257px",
+                  "realDistance" : "257px"
+                }, {
+                  "from" : {
+                    "object" : "loginButton",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "content",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : "148px",
+                  "realDistance" : "147px"
+                } ],
+                "highlight" : [ "loginButton", "content" ]
+              } ]
+            }, {
+              "name" : "welcome-page",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "specs/home.gspec",
+                  "lineNumber" : 108
+                },
+                "name" : "css font-weight matches \"500\"",
+                "highlight" : [ "welcome-page" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "specs/home.gspec",
+                  "lineNumber" : 109
+                },
+                "name" : "css font-size is \"63px\"",
+                "highlight" : [ "welcome-page" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "specs/home.gspec",
+                  "lineNumber" : 110
+                },
+                "name" : "css font-family matches \".*Helvetica Neue.*\"",
+                "highlight" : [ "welcome-page" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Footer",
+            "place" : {
+              "filePath" : "specs/home.gspec",
+              "lineNumber" : 116
+            },
+            "objects" : [ {
+              "name" : "footer",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "specs/home.gspec",
+                  "lineNumber" : 118
+                },
+                "name" : "text is \"Copyright (c) 2015\"",
+                "highlight" : [ "footer" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "specs/home.gspec",
+                  "lineNumber" : 120
+                },
+                "name" : "height 150px",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "footer",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "footer",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : "150px",
+                  "realDistance" : "150px"
+                } ],
+                "highlight" : [ "footer" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "header.logo" : {
+              "area" : [ 54, 13, 48, 48 ]
+            },
+            "menu-item-2" : {
+              "area" : [ 154, 70, 111, 64 ]
+            },
+            "footer" : {
+              "area" : [ 0, 584, 1008, 150 ]
+            },
+            "menu-item-3" : {
+              "area" : [ 264, 70, 100, 64 ]
+            },
+            "menu-item-1" : {
+              "area" : [ 54, 70, 100, 64 ]
+            },
+            "loginButton" : {
+              "area" : [ 104, 391, 78, 46 ]
+            },
+            "welcome-page" : {
+              "area" : [ 104, 222, 800, 69 ]
+            },
+            "menu-item-4" : {
+              "area" : [ 364, 70, 100, 64 ]
+            },
+            "header.caption" : {
+              "area" : [ 124, 20, 610, 40 ]
+            },
+            "menu" : {
+              "area" : [ 0, 70, 1008, 64 ]
+            },
+            "content" : {
+              "area" : [ 54, 134, 900, 450 ]
+            }
+          },
+          "screenshot" : "layout-10-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1548818573348,
+        "type" : "node"
+      }, {
+        "name" : "run  tests/logToMyNotes.js",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Click loginButton on Welcome page",
+          "status" : "info",
+          "nodes" : [ {
+            "name" : "css:  .button-login",
+            "type" : "text"
+          } ],
+          "time" : 1548818582096,
+          "type" : "node"
+        }, {
+          "name" : "Type \"testuser@example.com\" to username on Login page",
+          "status" : "info",
+          "nodes" : [ {
+            "name" : "css: input[name='login.username']",
+            "type" : "text"
+          } ],
+          "time" : 1548818583625,
+          "type" : "node"
+        }, {
+          "name" : "Type \"test123\" to password on Login page",
+          "status" : "info",
+          "nodes" : [ {
+            "name" : "css: input[name='login.password']",
+            "type" : "text"
+          } ],
+          "time" : 1548818684168,
+          "type" : "node"
+        }, {
+          "name" : "Click loginButton on Login page",
+          "status" : "info",
+          "nodes" : [ {
+            "name" : "css:  .button-login",
+            "type" : "text"
+          } ],
+          "time" : 1548818719694,
+          "type" : "node"
+        } ],
+        "time" : 1548818582068,
+        "type" : "node"
+      }, {
+        "name" : "check specs/mynotes.gspec --include \"desktop\"",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: specs/mynotes.gspec included tags: desktop",
+          "status" : "error",
+          "time" : 1548818721384,
+          "includedTags" : [ "desktop" ],
+          "excludedTags" : [ ],
+          "sections" : [ {
+            "name" : "Menu",
+            "place" : {
+              "filePath" : "specs/mynotes.gspec",
+              "lineNumber" : 11
+            },
+            "objects" : [ {
+              "name" : "menu-item-4",
+              "specs" : [ {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "specs/mynotes.gspec",
+                  "lineNumber" : 13
+                },
+                "name" : "image file mynotes-dump/objects/menu-item-4.png, map-filter denoise 2, error 5px",
+                "errors" : [ "Element does not look like \"specs\\mynotes-dump/objects/menu-item-4.png\". There are 314 mismatching pixels but max allowed is 5" ],
+                "highlight" : [ "menu-item-4" ],
+                "imageComparison" : {
+                  "actualImage" : "layout-15-menu-item-4-actual.png",
+                  "expectedImage" : "layout-16-menu-item-4-expected.png",
+                  "comparisonMapImage" : "layout-17-menu-item-4-map.png"
+                }
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "menu-item-4" : {
+              "area" : [ 364, 70, 100, 64 ]
+            }
+          },
+          "screenshot" : "layout-14-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1548818720234,
+        "type" : "node"
+      }, {
+        "name" : "run  tests/eventoTest.js",
+        "status" : "info",
+        "time" : 1548818721384,
+        "type" : "node"
+      }, {
+        "name" : "check specs/eventTeste.gspec --include \"desktop\"",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: specs/eventTeste.gspec included tags: desktop",
+          "status" : "error",
+          "time" : 1548818722661,
+          "includedTags" : [ "desktop" ],
+          "excludedTags" : [ ],
+          "sections" : [ {
+            "name" : "Content",
+            "place" : {
+              "filePath" : "specs/eventTeste.gspec",
+              "lineNumber" : 5
+            },
+            "objects" : [ {
+              "name" : "btn-primary",
+              "specs" : [ {
+                "status" : "error",
+                "place" : {
+                  "filePath" : "specs/eventTeste.gspec",
+                  "lineNumber" : 7
+                },
+                "name" : "color-scheme 80 to 100 % #22A30B, 1 to 4 % white",
+                "errors" : [ "color #22A30B on \"btn-primary\" is 79% which is not in range of 80 to 100%" ],
+                "highlight" : [ "btn-primary" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "btn-primary" : {
+              "area" : [ 74, 366, 106, 46 ]
+            }
+          },
+          "screenshot" : "layout-18-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1548818721848,
+        "type" : "node"
+      } ],
+      "time" : 1548818570553,
+      "type" : "node"
+    } ]
+  }
+}
